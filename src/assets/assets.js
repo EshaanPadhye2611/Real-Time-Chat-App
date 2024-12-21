@@ -16,6 +16,8 @@ import menu_icon from './menu_icon.png'
 import arrow_icon from './arrow_icon.png'
 import green_dot from './green_dot.png'
 import logo_blue from './logo_blue.png'
+import eshaan from './eshaan.png'
+import sih from './sih.jpeg'
 
 const assets = {
     avatar_icon,
@@ -35,7 +37,9 @@ const assets = {
     menu_icon,
     arrow_icon,
     green_dot,
-    logo_blue
+    logo_blue,
+    eshaan,
+    sih
 
 }
 
