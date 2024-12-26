@@ -5,12 +5,12 @@ import { getFirestore, setDoc, doc } from "firebase/firestore";
 import { toast } from "react-toastify";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDkx385ueUGwhueZXwNSOb85mv8YW9C4bA",
-  authDomain: "chat-app-gs-60412.firebaseapp.com",
-  projectId: "chat-app-gs-60412",
-  storageBucket: "chat-app-gs-60412.firebasestorage.app",
-  messagingSenderId: "241533717085",
-  appId: "1:241533717085:web:27e75d9b4e052a37ab1bb4"
+    apiKey: "AIzaSyC9s8Uk_4xGN135Y_1GGjYZeWQ_Wcv3kqA",
+    authDomain: "chat-app-gs-80d9f.firebaseapp.com",
+    projectId: "chat-app-gs-80d9f",
+    storageBucket: "college-compass-5e968.appspot.com",
+    messagingSenderId: "725361423137",
+  appId: "1:725361423137:web:e9c1a3f8466176832b8460"
 };
 
 // Initialize Firebase
@@ -32,7 +32,7 @@ const signup = async (username,email,password) =>{
         lastSeen:Date.now()
     })
     await setDoc(doc(db,"chats",user.uid),{
-        chatData:[]
+        chatsData:[]
     })
    } catch (error) {
      console.error(error)

@@ -103,4 +103,5 @@
 }
 .menu:hover .sub-menu{
     display: block;
+    padding: 10px;
 }

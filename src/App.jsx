@@ -17,16 +17,16 @@ const App = () => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (user) {
         try {
-          await loadUserData(user.uid); // Load user data
+          await loadUserData(user.uid); 
         } catch (error) {
           console.error("Error loading user data:", error);
         }
       } else {
-        navigate('/'); // Navigate to login if no user
+        navigate('/'); 
       }
     });
 
-    return () => unsubscribe(); // Cleanup subscription
+    return () => unsubscribe(); 
   }, [auth, loadUserData, navigate]);
 
   return (
